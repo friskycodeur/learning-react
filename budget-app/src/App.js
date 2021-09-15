@@ -1,10 +1,9 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 function App() {
   return (
     <div>
-      <h1 style={{ margin: "2rem", textAlign: "center" }}>
-        Expenses in September
-      </h1>
+      <NewExpense />
       <Expenses />
     </div>
   );

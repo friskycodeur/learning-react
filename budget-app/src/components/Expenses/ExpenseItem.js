@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ExpenseDate from "./ExpenseDate";
+import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
 function ExpenseItem(data) {
@@ -10,7 +11,7 @@ function ExpenseItem(data) {
     console.log(title);
   }
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       <ExpenseDate date={data.date}></ExpenseDate>
       <div className="expense-item__description">
         <h2>{title}</h2>
@@ -19,7 +20,7 @@ function ExpenseItem(data) {
       <button onClick={changeTitleHandler} className="expense-item__btn">
         Change Title
       </button>
-    </div>
+    </Card>
   );
 }
 
